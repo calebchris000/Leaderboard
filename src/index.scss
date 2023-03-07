@@ -17,7 +17,6 @@ body {
 }
 
 .container {
-  border: 2px solid $orange;
   margin: 0 auto;
   display: flex;
   padding: 10px 0;
@@ -25,7 +24,7 @@ body {
 }
 
 .scoreCard {
-  border: 2px solid $blue;
+  border: 3px solid $blue;
   border-radius: 4px;
   width: 25vw;
   padding: 20px 10px;
@@ -33,7 +32,7 @@ body {
 
 .subWrapper {
   display: flex;
-  border: 2px solid $blue;
+  border: 3px solid $blue;
   justify-content: space-around;
 }
 
@@ -50,7 +49,7 @@ body {
 .refresh {
   align-self: center;
   background-color: $dark-blue;
-  border: 2px solid $blue;
+  border: 3px solid $blue;
   color: $blue;
   padding: 5px 10px;
   transition: all 0.2s ease;
@@ -63,7 +62,7 @@ body {
 
 .item {
   margin: 10px 0;
-  border: 2px solid $blue;
+  border: 3px solid $blue;
   border-radius: 4px;
   color: $blue;
   padding: 10px;
@@ -79,7 +78,7 @@ body {
 }
 
 .inputCard {
-  border: 2px solid $orange;
+  border: 3px solid $orange;
   border-radius: 4px;
   width: 25vw;
   display: flex;
@@ -100,7 +99,7 @@ body {
   margin: 10px 0;
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid $orange;
+  border: 3px solid $orange;
   font-weight: 600;
   color: $orange;
 }
@@ -123,7 +122,7 @@ body {
   height: 36px;
   align-self: flex-end;
   color: $orange;
-  border: 2px solid $orange;
+  border: 3px solid $orange;
   background-color: rgba(0, 0, 0, 0);
   font-weight: 600;
   border-radius: 4px;
@@ -133,4 +132,22 @@ body {
 
 #submit:active {
   transform: scale(0.96);
+}
+
+@media screen and (max-width: 320px) {
+  .title {
+    font-size: 1.2rem;
+    margin: 0 auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scoreCard,
+  .inputCard {
+    width: 80vw;
+    margin-bottom: 10px;
+  }
 }
