@@ -1,5 +1,5 @@
 {
-  "name": "Leaderboard",
+  "name": "leaderboard",
   "version": "1.0.0",
   "description": "Leaderboard is an application that record names of sports people alongside their scores.",
   "main": "babel.config.js",

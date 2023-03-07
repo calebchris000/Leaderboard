@@ -25,16 +25,15 @@ body {
 }
 
 .scoreCard {
-  border: 2px solid $orange;
+  border: 2px solid $blue;
   border-radius: 4px;
   width: 25vw;
   padding: 20px 10px;
-  height: 50vh;
 }
 
 .subWrapper {
   display: flex;
-  border: 2px solid $orange;
+  border: 2px solid $blue;
   justify-content: space-around;
 }
 
@@ -51,15 +50,33 @@ body {
 .refresh {
   align-self: center;
   color: $dark-blue;
+  background-color: $dark-blue;
+  border: 2px solid $blue;
+  color: $blue;
+  padding: 5px 10px;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.refresh:active {
+  transform: scale(0.96);
 }
 
 .item {
   margin: 10px 0;
-  border: 2px solid $orange;
+  border: 2px solid $blue;
   border-radius: 4px;
   color: $blue;
   padding: 10px;
   font-weight: 600;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.item:hover {
+  background-color: $blue;
+  color: $dark-blue;
+  transform: scale(1.02);
 }
 
 .inputCard {
@@ -72,7 +89,7 @@ body {
 }
 
 .addScore {
-  color: $blue;
+  color: $orange;
   font-weight: 600;
   text-align: center;
   font-size: 1.4rem;
@@ -86,7 +103,7 @@ body {
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid $orange;
   font-weight: 600;
-  color: $blue;
+  color: $orange;
 }
 
 #user::placeholder,
@@ -106,10 +123,15 @@ body {
 #submit {
   height: 36px;
   align-self: flex-end;
-  color: $blue;
+  color: $orange;
   border: 2px solid $orange;
   background-color: rgba(0, 0, 0, 0);
   font-weight: 600;
   border-radius: 4px;
-  padding: 0 16px;
+  padding: 0 10px;
+  transition: all 0.2s ease;
+}
+
+#submit:active {
+transform: scale(0.96);
 }
