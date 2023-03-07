@@ -1,0 +1,136 @@
+$orange: #ff8c00;
+$blue: #0ff;
+$dark-blue: rgb(4, 25, 43);
+
+* {
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-color: $dark-blue;
+}
+
+.title {
+  margin: 30px auto;
+  padding: 0;
+  color: $blue;
+}
+
+.container {
+  border: 2px solid $orange;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-evenly;
+}
+
+.scoreCard {
+  border: 2px solid $blue;
+  border-radius: 4px;
+  width: 25vw;
+  padding: 20px 10px;
+}
+
+.subWrapper {
+  display: flex;
+  border: 2px solid $blue;
+  justify-content: space-around;
+}
+
+.recentScores,
+.refresh {
+  color: $blue;
+  font-weight: 600;
+}
+
+.recentScores {
+  font-weight: 600;
+}
+
+.refresh {
+  align-self: center;
+  background-color: $dark-blue;
+  border: 2px solid $blue;
+  color: $blue;
+  padding: 5px 10px;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.refresh:active {
+  transform: scale(0.96);
+}
+
+.item {
+  margin: 10px 0;
+  border: 2px solid $blue;
+  border-radius: 4px;
+  color: $blue;
+  padding: 10px;
+  font-weight: 600;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.item:hover {
+  background-color: $blue;
+  color: $dark-blue;
+  transform: scale(1.02);
+}
+
+.inputCard {
+  border: 2px solid $orange;
+  border-radius: 4px;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+.addScore {
+  color: $orange;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+#user,
+#score {
+  height: 36px;
+  margin: 10px 0;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid $orange;
+  font-weight: 600;
+  color: $orange;
+}
+
+#user::placeholder,
+#score::placeholder {
+  color: $orange;
+}
+
+#score::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#user:focus,
+#score:focus {
+  outline: none;
+}
+
+#submit {
+  height: 36px;
+  align-self: flex-end;
+  color: $orange;
+  border: 2px solid $orange;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0 10px;
+  transition: all 0.2s ease;
+}
+
+#submit:active {
+  transform: scale(0.96);
+}

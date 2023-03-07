@@ -1,16 +1,34 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "user": "One",
+      "score": "21",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "user": "Two",
+      "score": "88",
+      "id": 2
+    },
+    {
+      "user": "Three",
+      "score": "44",
+      "id": 3
+    },
+    {
+      "user": "Four",
+      "score": "67",
+      "id": 4
+    },
+    {
+      "user": "Caleb",
+      "score": "99",
+      "id": 5
+    },
+    {
+      "user": "Tracy Myer",
+      "score": "69",
+      "id": 6
     }
   ]
 }

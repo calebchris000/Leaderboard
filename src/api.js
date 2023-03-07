@@ -1,20 +1,18 @@
-const postData = async (user, score) => {
-  const send = await fetch("http://localhost:3000/profile ", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ user: user, score: score }),
-  });
-  let response = await send.json();
-  return response;
-};
-
-const getData = async () => {
-  const send = await fetch("http://localhost:3000/posts");
+export const postData = async (user, score) => {
+  const send = await fetch(
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zgU632WsHpsxMoPC2L4Z/scores',
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ user, score }),
+    },
+  );
   const response = await send.json();
   return response;
 };
 
-module.exports = {
-  postData: postData,
-  getData: getData,
+export const getData = async () => {
+  const send = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zgU632WsHpsxMoPC2L4Z/scores');
+  const response = await send.json();
+  return response;
 };
