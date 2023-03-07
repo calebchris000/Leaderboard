@@ -1,5 +1,5 @@
 $orange: #ff8c00;
-$blue: #00ffff;
+$blue: #0ff;
 $dark-blue: rgb(4, 25, 43);
 
 * {
@@ -44,13 +44,12 @@ body {
 }
 
 .recentScores {
-font-weight: 600;
+  font-weight: 600;
 }
 
 .refresh {
- height: fit-content;
- align-self: center;
- color: $dark-blue;
+  align-self: center;
+  color: $dark-blue;
 }
 
 .item {
@@ -87,12 +86,13 @@ font-weight: 600;
   color: $dark-blue;
 }
 
+#score::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 #user:focus,
 #score:focus {
   outline: none;
-}
-#score::-webkit-inner-spin-button {
-  -webkit-appearance: none;
 }
 
 #submit {
