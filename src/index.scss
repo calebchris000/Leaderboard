@@ -34,7 +34,23 @@ body {
 .subWrapper {
   display: flex;
   border: 2px solid $orange;
-  width: fit-content;
+  justify-content: space-around;
+}
+
+.recentScores,
+.refresh {
+  color: $blue;
+  font-weight: 600;
+}
+
+.recentScores {
+font-weight: 600;
+}
+
+.refresh {
+ height: fit-content;
+ align-self: center;
+ color: $dark-blue;
 }
 
 .item {
@@ -60,7 +76,7 @@ body {
   height: 36px;
   margin: 10px 0;
   border-radius: 4px;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border: 2px solid $orange;
   font-weight: 600;
   color: $blue;
@@ -68,7 +84,7 @@ body {
 
 #user::placeholder,
 #score::placeholder {
-    color: $dark-blue;
+  color: $dark-blue;
 }
 
 #user:focus,
@@ -76,7 +92,7 @@ body {
   outline: none;
 }
 #score::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 #submit {
@@ -84,7 +100,7 @@ body {
   align-self: flex-end;
   color: $blue;
   border: 2px solid $orange;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   font-weight: 600;
   border-radius: 4px;
   padding: 0 16px;

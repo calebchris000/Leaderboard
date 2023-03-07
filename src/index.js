@@ -1,6 +1,6 @@
-const { postData, getData } = require("./api.js");
-const createList = require("./createLists.js");
-require("./index.scss");
+import { postData, getData } from "./api.js";
+import createList from "./createLists.js";
+import "./index.scss";
 
 const user = document.getElementById("user");
 const score = document.getElementById("score");

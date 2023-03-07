@@ -1,4 +1,4 @@
-const postData = async (user, score) => {
+export const postData = async (user, score) => {
   const send = await fetch("http://localhost:3000/posts ", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -9,13 +9,9 @@ const postData = async (user, score) => {
 }; 
 
 
-const getData = async () => {
+export const getData = async () => {
   const send = await fetch("http://localhost:3000/posts");
   const response = await send.json();
   return response;
 };
 
-module.exports = {
-  postData: postData,
-  getData: getData,
-};
