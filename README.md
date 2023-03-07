@@ -64,7 +64,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://calebchris000.github.io/Hit-The-API/build/)
+- [Live Demo Link](https://calebchris000.github.io/Leaderboard/build/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
