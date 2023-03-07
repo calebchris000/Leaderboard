@@ -5,7 +5,7 @@ import './index.scss';
 const user = document.getElementById('user');
 const score = document.getElementById('score');
 const submit = document.getElementById('submit');
-const refresh = document.querySelector('.refresh')
+const refresh = document.querySelector('.refresh');
 
 const upload = async (e) => {
   e.preventDefault();
@@ -25,6 +25,5 @@ const reload = async () => {
 };
 
 refresh.addEventListener('click', () => reload);
-
 
 window.onload = reload;

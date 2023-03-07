@@ -49,7 +49,6 @@ body {
 
 .refresh {
   align-self: center;
-  color: $dark-blue;
   background-color: $dark-blue;
   border: 2px solid $blue;
   color: $blue;
@@ -108,7 +107,7 @@ body {
 
 #user::placeholder,
 #score::placeholder {
-  color: $orange
+  color: $orange;
 }
 
 #score::-webkit-inner-spin-button {
@@ -133,5 +132,5 @@ body {
 }
 
 #submit:active {
-transform: scale(0.96);
+  transform: scale(0.96);
 }

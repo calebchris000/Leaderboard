@@ -1,7 +1,7 @@
 const createList = (data) => {
-  let item = ''
+  let item = '';
 
-  const list = document.querySelector(".list");
+  const list = document.querySelector('.list');
   const sorted = data.sort((a, b) => b.score - a.score);
 
   sorted.forEach((element) => {
