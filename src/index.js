@@ -11,7 +11,7 @@ const upload = async (e) => {
   user.value = '';
   score.value = '';
 
-  const display = await getData();
+  const display = await getData().result;
   createList(display);
 };
 
@@ -19,7 +19,7 @@ submit.addEventListener('click', upload);
 
 const reload = async () => {
   const get = await getData();
-  createList(get);
+  createList(get.result);
 };
 
 window.onload = reload;

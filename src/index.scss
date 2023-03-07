@@ -29,6 +29,7 @@ body {
   border-radius: 4px;
   width: 25vw;
   padding: 20px 10px;
+  height: 50vh;
 }
 
 .subWrapper {
@@ -45,6 +46,7 @@ body {
 
 .recentScores {
   font-weight: 600;
+  font-weight: 1.4rem;
 }
 
 .refresh {
@@ -61,6 +63,8 @@ body {
   font-weight: 600;
 }
 
+
+
 .inputCard {
   border: 2px solid $orange;
   border-radius: 4px;
@@ -68,6 +72,13 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px 10px;
+}
+
+.addScore {
+  color: $blue;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 #user,
