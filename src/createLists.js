@@ -1,7 +1,6 @@
 const createList = (data) => {
-  const scoreCard = document.querySelector(".scoreCard");
+  const scoreCard = document.querySelector('.scoreCard');
   const sorted = data.sort((a, b) => b.score - a.score);
-  const firstChild = document.querySelector(".subWrapper");
   let item = ` <div class="subWrapper">
    <p class="recentScores">Recent Scores</p>
    <button class="refresh">Refresh</button>
@@ -14,7 +13,7 @@ const createList = (data) => {
     <div class="item">${user}: ${score}</div>
     `;
   });
-  scoreCard.innerHTML = item
+  scoreCard.innerHTML = item;
 };
 
 export default createList;
