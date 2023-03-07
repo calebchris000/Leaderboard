@@ -1,0 +1,91 @@
+$orange: #ff8c00;
+$blue: #00ffff;
+$dark-blue: rgb(4, 25, 43);
+
+* {
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-color: $dark-blue;
+}
+
+.title {
+  margin: 30px auto;
+  padding: 0;
+  color: $blue;
+}
+
+.container {
+  border: 2px solid $orange;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-evenly;
+}
+
+.scoreCard {
+  border: 2px solid $orange;
+  border-radius: 4px;
+  width: 25vw;
+  padding: 20px 10px;
+}
+
+.subWrapper {
+  display: flex;
+  border: 2px solid $orange;
+  width: fit-content;
+}
+
+.item {
+  margin: 10px 0;
+  border: 2px solid $orange;
+  border-radius: 4px;
+  color: $blue;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.inputCard {
+  border: 2px solid $orange;
+  border-radius: 4px;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+#user,
+#score {
+  height: 36px;
+  margin: 10px 0;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid $orange;
+  font-weight: 600;
+  color: $blue;
+}
+
+#user::placeholder,
+#score::placeholder {
+    color: $dark-blue;
+}
+
+#user:focus,
+#score:focus {
+  outline: none;
+}
+#score::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#submit {
+  height: 36px;
+  align-self: flex-end;
+  color: $blue;
+  border: 2px solid $orange;
+  background-color: rgba(0,0,0,0);
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0 16px;
+}
