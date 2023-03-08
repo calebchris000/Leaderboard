@@ -28,6 +28,12 @@ body {
   border-radius: 4px;
   width: 25vw;
   padding: 20px 10px;
+  overflow-y: scroll;
+  height: 60vh;
+}
+
+.scoreCard::-webkit-scrollbar {
+  display: none;
 }
 
 .subWrapper {
@@ -66,6 +72,7 @@ body {
   border-radius: 4px;
   color: $blue;
   padding: 10px;
+  word-wrap: break-word;
   font-weight: 600;
   user-select: none;
   transition: all 0.3s ease;
