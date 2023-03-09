@@ -6,9 +6,11 @@ const createList = (data) => {
 
   sorted.forEach((element) => {
     const { user, score } = element;
+    const slice1 = user.slice(0, 10);
+    const slice2 = score.slice(0, 2);
     item += `
     
-    <div class="item">${user}: ${score}</div>
+    <div class="item">${slice1}: ${slice2}</div>
     `;
   });
   list.innerHTML = item;
