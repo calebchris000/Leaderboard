@@ -2,6 +2,7 @@ import { postData, getData } from './api.js';
 import createList from './createLists.js';
 import './index.scss';
 
+
 const user = document.getElementById('user');
 const score = document.getElementById('score');
 const submit = document.getElementById('submit');

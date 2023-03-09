@@ -1,6 +1,7 @@
 $orange: #ff8c00;
 $blue: #0ff;
 $dark-blue: rgb(4, 25, 43);
+$odd: rgb(1, 191, 191);
 
 * {
   font-family: "poppins", sans-serif;
@@ -25,7 +26,6 @@ body {
 }
 
 .scoreCard {
-  border: 3px solid $blue;
   border-radius: 4px;
   width: 25vw;
   padding: 20px 10px;
@@ -39,8 +39,12 @@ body {
 
 .subWrapper {
   display: flex;
-  border: 3px solid $blue;
   justify-content: space-around;
+  position: sticky;
+  top:-30px;
+  margin: 0 auto;
+  background-color: $dark-blue;
+  z-index: 2;
 }
 
 .recentScores,
@@ -67,6 +71,11 @@ body {
   transform: scale(0.96);
 }
 
+.list {
+  border: 3px solid $blue;
+  padding: 10px;
+}
+
 .item {
   margin: 10px 0;
   border: 3px solid $blue;
@@ -85,8 +94,15 @@ body {
   transform: scale(1.02);
 }
 
+.item:nth-child(odd) {
+  border: 3px solid white;
+}
+
+.item:nth-child(odd):hover {
+  background-color: white;
+}
+
 .inputCard {
-  border: 3px solid $orange;
   border-radius: 4px;
   width: 25vw;
   display: flex;
